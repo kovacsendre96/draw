@@ -18,11 +18,29 @@ var context = canvas.getContext('2d');
 let canvasWidth=canvas.width;//450
 let canvasHeight=canvas.height;//300
 //let padding=10;
-let size=100;
+//let size=100;
 
-context.fillStyle = 'rgba(255,0,0,.5)';
-context.fillRect(canvasWidth/2-size/4-size/2,canvasHeight/2-size/4-size/2,size,size);
+//context.fillStyle = 'rgba(255,0,0,.5)';
+//context.fillRect(canvasWidth/2-size/4-size/2,canvasHeight/2-size/4-size/2,size,size);
 //450-300, 
 
-context.fillStyle = 'rgba(0,0,255,.5)';
-context.fillRect(canvasWidth/2-size/4,canvasHeight/4+size/2,size,size);
+//context.fillStyle = 'rgba(0,0,255,.5)';
+//context.fillRect(canvasWidth/2-size/4,canvasHeight/4+size/2,size,size);
+
+let sizeWidth=250;
+let sizeHeight=50;
+
+let w =canvasWidth/2-sizeWidth/2;
+let h =canvasHeight/2-sizeHeight/2;
+
+
+context.fillStyle = 'white';
+context.fillRect(w,h,sizeWidth,sizeHeight);
+
+
+context.fillStyle = 'red';
+context.fillRect(w,h-sizeHeight,sizeWidth,sizeHeight);
+
+
+context.fillStyle = 'green';
+context.fillRect(w,h+sizeHeight,sizeWidth,sizeHeight);

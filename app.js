@@ -10,7 +10,14 @@ var context = canvas.getContext('2d');
 //context.strokeStyle = 'red';
 //context.stroke();
 
+//let canvasWidth=canvas.width;
+//let canvasHeight=canvas.height;
+//context.fillStyle='black';
+//context.fillRect(canvasWidth/2,canvasHeight/2,canvasWidth/2,canvasHeight/2);
+
 let canvasWidth=canvas.width;
 let canvasHeight=canvas.height;
-context.fillStyle='black';
-context.fillRect(canvasWidth/2,canvasHeight/2,canvasWidth/2,canvasHeight/2);
+let padding=10;
+let size=100;
+context.fillStyle = 'green';
+context.fillRect(canvasWidth-size-padding,canvasHeight-size-padding,size,size);

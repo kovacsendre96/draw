@@ -15,9 +15,14 @@ var context = canvas.getContext('2d');
 //context.fillStyle='black';
 //context.fillRect(canvasWidth/2,canvasHeight/2,canvasWidth/2,canvasHeight/2);
 
-let canvasWidth=canvas.width;
-let canvasHeight=canvas.height;
-let padding=10;
+let canvasWidth=canvas.width;//450
+let canvasHeight=canvas.height;//300
+//let padding=10;
 let size=100;
-context.fillStyle = 'green';
-context.fillRect(canvasWidth-size-padding,canvasHeight-size-padding,size,size);
+
+context.fillStyle = 'rgba(255,0,0,.5)';
+context.fillRect(canvasWidth/2-size/4-size/2,canvasHeight/2-size/4-size/2,size,size);
+//450-300, 
+
+context.fillStyle = 'rgba(0,0,255,.5)';
+context.fillRect(canvasWidth/2-size/4,canvasHeight/4+size/2,size,size);

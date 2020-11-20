@@ -50,17 +50,36 @@ var context = canvas.getContext('2d');
 
 
 
-let canvasWidth = canvas.width;
-let canvasHeight = canvas.height;
+// let canvasWidth = canvas.width;
+// let canvasHeight = canvas.height;
+
+// context.beginPath();
+// context.moveTo(0,canvasHeight);
+// context.lineTo(canvasWidth,0);
+// context.strokeStyle = 'red';
+// context.stroke();
+
+// context.beginPath();
+// context.moveTo(0,0);
+// context.lineTo(canvasWidth,canvasHeight);
+// context.strokeStyle = 'red';
+// context.stroke();
+
+let size = 150;
+let canvasWidth=canvas.width;
+let canvasHeight=canvas.height;
+
+
 
 context.beginPath();
-context.moveTo(0,canvasHeight);
-context.lineTo(canvasWidth,0);
-context.strokeStyle = 'red';
+context.moveTo(canvasWidth/2-size/2,canvasHeight/2+size/2);
+context.lineTo(canvasWidth/2,canvasHeight/2-size/2);
+//
+context.lineTo(canvasWidth/2+size/2, canvasHeight/2+size/2);
+//
+context.lineTo(canvasWidth/2-size/2,canvasHeight/2+size/2);
+//
+context.strokeStyle = 'rgba(128,128,128,.5)';
 context.stroke();
-
-context.beginPath();
-context.moveTo(0,0);
-context.lineTo(canvasWidth,canvasHeight);
-context.strokeStyle = 'red';
-context.stroke();
+context.fillStyle = 'rgba(255,165,0,.5)';
+context.fill();

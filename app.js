@@ -1,7 +1,7 @@
 var canvas = document.getElementById('myCanvas');
 var context = canvas.getContext('2d');
 
-
+// ========TASK1========
 //context.fillStyle = '#D2691E';
 //context.fillRect(125,50,200,200);
 //context.beginPath();
@@ -10,6 +10,8 @@ var context = canvas.getContext('2d');
 //context.strokeStyle = 'red';
 //context.stroke();
 
+
+// ========TASK2========
 let canvasWidth=canvas.width;
 let canvasHeight=canvas.height;
 //context.fillStyle='black';
@@ -108,8 +110,8 @@ for(let i = 0; i<9; i++){
     positionY+=size/2;
 }
  */
-
-let size=50;
+// ========TASK12========
+/* let size=50;
 let slide=15;
 let padding=5;
 let number=5
@@ -129,13 +131,28 @@ for(let j = 0; j <= 4; j++){
    
 
     
-} }
+} } */
+// ========TASK13========
+let red=255;
+let green=79;
+let blue=120;
+
+let size = 30;
+let width = 125;
+let padding = 5;
 
 
-
-
-
-
+for(j=0; j<6; j++){
+    blue += 15;
+    let height=50+size*j+padding*j;
+    
+    for(i=0; i<6; i++){
+        context.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        context.fillRect(width+size*i+padding*i, height, size, size);
+        red-=7;
+   
+    }
+}
 
 
 

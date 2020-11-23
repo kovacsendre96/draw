@@ -190,7 +190,7 @@ for(i=0; i<17; i++){
 
 
  // ========TASK16========
-
+/*
 
 
 var size = 50;
@@ -212,4 +212,26 @@ for(let i = 1; i<16; i++){
         context.fillStyle = "rgba(0,0,0,.5)";
     }
 context.fillRect(x+=width, y+=height, size, size);
+}*/
+
+
+
+// ========TASK16========
+
+let padding=3;
+
+for(i=0;i<151;i++){
+
+    context.beginPath();
+    context.moveTo(canvasWidth-canvasWidth+padding*i,canvasHeight/2+padding);
+    if(i%2==1){
+        context.lineTo(canvasWidth/2,canvasHeight-canvasHeight)}
+    if(i%2==0){
+        context.lineTo(canvasWidth/2,canvasHeight)
+    }
+    
+    context.strokeStyle = "rgba(255,0,0,.5)";
+    context.stroke()
+
 }
+

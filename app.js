@@ -133,7 +133,7 @@ for(let j = 0; j <= 4; j++){
     
 } } */
 // ========TASK13========
-let red=255;
+/* let red=255;
 let green=79;
 let blue=120;
 
@@ -153,8 +153,21 @@ for(j=0; j<6; j++){
    
     }
 }
+ */
 
 
+// ========TASK14========
 
 
-
+let size = 100;
+let space = 5;
+for(i=0; i<30; i++){
+    let padding = 120+space*i;
+    context.beginPath();
+    context.moveTo(padding,padding);
+    context.lineTo(padding+size/2,padding-size);
+    context.lineTo(padding+size,padding);
+    context.lineTo(padding,padding);
+    context.strokeStyle = "grey";
+    context.stroke();
+}

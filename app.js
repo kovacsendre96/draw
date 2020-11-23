@@ -159,7 +159,7 @@ for(j=0; j<6; j++){
 // ========TASK14========
 
 
-let size = 100;
+/* let size = 100;
 let space = 5;
 for(i=0; i<30; i++){
     let padding = 120+space*i;
@@ -171,3 +171,15 @@ for(i=0; i<30; i++){
     context.strokeStyle = "grey";
     context.stroke();
 }
+ */
+
+// ========TASK15========
+
+let padding = 10;
+let hue = 360;
+for(i=0; i<17; i++){
+    context.fillStyle = "hsl("+ hue + ","+ "60%, 45%)";
+    context.fillRect((canvasWidth-canvasWidth)+i*padding, (canvasHeight-canvasHeight)+i*padding, canvasWidth-i*2*padding, canvasHeight-i*2*padding);
+    hue-=hue/17;
+}
+

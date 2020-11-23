@@ -96,7 +96,7 @@ context.lineTo(canvasWidth,canvasHeight/2);
 context.strokeStyle = 'red';
 context.stroke(); */
 
-var padding = 20;
+/* var padding = 20;
 var size = 45;
 var positionX = canvasWidth-canvasWidth+padding;
 var positionY = canvasHeight-canvasHeight+padding;
@@ -107,3 +107,37 @@ for(let i = 0; i<9; i++){
     positionX+=size/2;
     positionY+=size/2;
 }
+ */
+
+let size=50;
+let slide=15;
+let padding=5;
+let number=5
+
+for(let j = 0; j <= 4; j++){
+    let newPosition= slide+size*j+padding*j;
+    number=number-1
+    
+ for(let i = 0; i <= number; i++){
+     
+
+    context.fillStyle = "rgba(255,165,0,.5)";
+    
+    context.fillRect(newPosition, newPosition+size*i+padding*i, size, size); 
+
+
+   
+
+    
+} }
+
+
+
+
+
+
+
+
+
+
+

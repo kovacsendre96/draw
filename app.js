@@ -10,8 +10,8 @@ var context = canvas.getContext('2d');
 //context.strokeStyle = 'red';
 //context.stroke();
 
-//let canvasWidth=canvas.width;
-//let canvasHeight=canvas.height;
+let canvasWidth=canvas.width;
+let canvasHeight=canvas.height;
 //context.fillStyle='black';
 //context.fillRect(canvasWidth/2,canvasHeight/2,canvasWidth/2,canvasHeight/2);
 
@@ -65,21 +65,33 @@ var context = canvas.getContext('2d');
 // context.strokeStyle = 'red';
 // context.stroke();
 
-let size = 150;
-let canvasWidth=canvas.width;
-let canvasHeight=canvas.height;
+// let size = 150;
+// let canvasWidth=canvas.width;
+// let canvasHeight=canvas.height;
 
 
+
+// context.beginPath();
+// context.moveTo(canvasWidth/2-size/2,canvasHeight/2+size/2);
+// context.lineTo(canvasWidth/2,canvasHeight/2-size/2);
+// //
+// context.lineTo(canvasWidth/2+size/2, canvasHeight/2+size/2);
+// //
+// context.lineTo(canvasWidth/2-size/2,canvasHeight/2+size/2);
+// //
+// context.strokeStyle = 'rgba(128,128,128,.5)';
+// context.stroke();
+// context.fillStyle = 'rgba(255,165,0,.5)';
+// context.fill();
 
 context.beginPath();
-context.moveTo(canvasWidth/2-size/2,canvasHeight/2+size/2);
-context.lineTo(canvasWidth/2,canvasHeight/2-size/2);
-//
-context.lineTo(canvasWidth/2+size/2, canvasHeight/2+size/2);
-//
-context.lineTo(canvasWidth/2-size/2,canvasHeight/2+size/2);
-//
-context.strokeStyle = 'rgba(128,128,128,.5)';
+context.moveTo(canvasWidth/2,canvasHeight-canvasHeight);
+context.lineTo(canvasWidth/2,canvasHeight);
+context.strokeStyle = 'green';
 context.stroke();
-context.fillStyle = 'rgba(255,165,0,.5)';
-context.fill();
+
+context.beginPath();
+context.moveTo(canvasWidth-canvasWidth,canvasHeight/2);
+context.lineTo(canvasWidth,canvasHeight/2);
+context.strokeStyle = 'red';
+context.stroke();

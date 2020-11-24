@@ -308,8 +308,8 @@ triangle(200, 50, 150);
     context.lineTo(positionX, positionY);
     context.strokeStyle = 'rgb(233,159,184)';
     context.stroke();
-    context.fillStyle = 'rgb(233,159,184)';
-    context.fill();
+        context.fillStyle = 'rgb(233,159,184)';
+        context.fill();
 }
 
 star(40, 50, 75);
@@ -319,7 +319,7 @@ star(250, 220, 150);*/
 
 
  //========TASK21========
- function random(max, min) {
+/*  function random(max, min) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
@@ -335,7 +335,33 @@ function lineToCenter(positionX, positionY, color){
 for(let i=0;i<1000;i++){
 lineToCenter(random(450,0),random(300,0),'teal');
 
-}
+} */
 
 
+ //========TASK22========
 
+let width=113;
+let height=98;
+
+ function drawHexagon(positionX, positionY){
+    context.beginPath();
+    context.moveTo(positionX, positionY);
+    context.lineTo(positionX+width/4, positionY-height/2);
+    context.lineTo(positionX+(width/4)*3, positionY-height/2);
+    context.lineTo(positionX+width, positionY);
+    context.lineTo(positionX+(width/4)*3, positionY+height/2);
+    context.lineTo(positionX+width/4, positionY+height/2);
+    context.lineTo(positionX, positionY);
+    context.strokeStyle = 'orange'
+    context.stroke();
+
+ }
+ drawHexagon(76, 120);
+drawHexagon(76, 230);
+drawHexagon(168.5, 65);
+drawHexagon(168.5, 175);
+drawHexagon(168.5, 285);
+drawHexagon(261, 120);
+drawHexagon(261, 230);
+context.fillStyle = 'orange';
+    context.fill();

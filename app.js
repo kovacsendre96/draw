@@ -216,7 +216,7 @@ context.fillRect(x+=width, y+=height, size, size);
 
 
 
-// ========TASK16========
+// ========TASK17========
 
 /* let padding=3;
 
@@ -236,7 +236,7 @@ for(i=0;i<151;i++){
 } */
 
 
-// ========TASK17========
+// ========TASK18========
 
 let padding=1;
 

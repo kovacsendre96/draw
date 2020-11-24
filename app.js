@@ -238,7 +238,7 @@ for(i=0;i<151;i++){
 
 // ========TASK18========
 
-let padding=1;
+/* let padding=1;
 
 
 for(let i=0;i<canvasWidth;i++){
@@ -263,4 +263,27 @@ context.beginPath();
     
     context.strokeStyle = "rgba(0,0,255,.5)";
     context.stroke();
+} */
+
+
+//========TASK18========
+
+
+
+function triangle(positionX, positionY, size){
+    context.beginPath();
+    context.moveTo(positionX,positionY);
+    context.lineTo(positionX-size/2,positionY+size);
+    context.lineTo(positionX+size/2,positionY+size);
+    context.lineTo(positionX,positionY);
+    context.strokeStyle = 'rgba(0,0,0,.5)';
+    context.stroke();
+    context.fillStyle = 'rgba(255,165,0,.5)';
+    context.fill();
 }
+
+
+
+triangle(230, 160, 50);
+triangle(270, 100, 50);
+triangle(200, 50, 150);

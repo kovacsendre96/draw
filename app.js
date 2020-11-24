@@ -339,7 +339,7 @@ lineToCenter(random(450,0),random(300,0),'teal');
 
 
  //========TASK22========
-
+/*
 let width=113;
 let height=98;
 
@@ -364,4 +364,50 @@ drawHexagon(168.5, 285);
 drawHexagon(261, 120);
 drawHexagon(261, 230);
 context.fillStyle = 'orange';
-    context.fill();
+    context.fill();*/
+
+
+
+//========TASK23========
+
+function drawCheckeredPattern(row,col){
+    for(let j=0;j<row;j++){
+
+        
+    for( let i=0;i<col;i++){
+
+
+
+if(j%2==1){
+
+        if(i%2==1){
+            context.fillStyle = 'black';
+        }
+
+        
+        else{
+            context.fillStyle = 'white';
+        }
+    }
+
+
+    if(j%2==0){
+
+        if(i%2==1){
+            context.fillStyle = 'white';
+        }
+
+        
+        else{
+            context.fillStyle = 'black';
+        }
+    }
+
+
+        context.fillRect(canvasWidth/row*i,canvasHeight/col*j,canvasWidth/row,canvasHeight/col);
+
+    }
+}
+}
+
+drawCheckeredPattern(8,8);

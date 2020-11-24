@@ -218,7 +218,7 @@ context.fillRect(x+=width, y+=height, size, size);
 
 // ========TASK16========
 
-let padding=3;
+/* let padding=3;
 
 for(i=0;i<151;i++){
 
@@ -233,5 +233,34 @@ for(i=0;i<151;i++){
     context.strokeStyle = "rgba(255,0,0,.5)";
     context.stroke()
 
-}
+} */
 
+
+// ========TASK17========
+
+let padding=1;
+
+
+for(let i=0;i<canvasWidth;i++){
+    let x=padding*i
+context.beginPath();
+    context.moveTo(x,canvasHeight/2);
+    if(x%4==0){
+        context.lineTo(canvasWidth-canvasWidth,canvasHeight-canvasHeight);
+    }
+
+    if(x%4==1){
+        context.lineTo(canvasWidth-canvasWidth,canvasHeight);
+    }
+
+    if(x%4==2){
+        context.lineTo(canvasWidth,canvasHeight);
+    }
+
+    if(x%4==3){
+        context.lineTo(canvasWidth,canvasHeight-canvasHeight);
+    }
+    
+    context.strokeStyle = "rgba(0,0,255,.5)";
+    context.stroke();
+}

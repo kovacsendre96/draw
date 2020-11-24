@@ -295,12 +295,12 @@ triangle(200, 50, 150);
  //========TASK20========
 
 
- function star(positionX, positionY, size) {
+ /*function star(positionX, positionY, size) {
 
     context.beginPath();
 
     context.moveTo(positionX, positionY);
-    
+
     context.lineTo(positionX + size, positionY);
     context.lineTo(positionX + size * 0.15, positionY + size * 0.5);
     context.lineTo(positionX + size * 0.5, positionY - size * 0.4);
@@ -314,4 +314,28 @@ triangle(200, 50, 150);
 
 star(40, 50, 75);
 star(130, 120, 100);
-star(250, 220, 150);
+star(250, 220, 150);*/
+
+
+
+ //========TASK21========
+ function random(max, min) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function lineToCenter(positionX, positionY, color){
+    context.beginPath();
+    context.moveTo(positionX,positionY);
+    context.lineTo(canvasWidth/2,canvasHeight/2);
+    context.strokeStyle = color
+    context.stroke();
+
+}
+
+for(let i=0;i<1000;i++){
+lineToCenter(random(450,0),random(300,0),'teal');
+
+}
+
+
+
